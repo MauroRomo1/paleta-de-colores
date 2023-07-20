@@ -1,22 +1,26 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import FormColor from "./components/FormColor";
+import { useState } from "react";
 const App = () => {
   return (
     <>
       <header>
         <h2 className="text-center">
-          Paletas de colores
+          Paleta de colores
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Artist%20Palette.png"
             alt="Artist Palette"
-            className="paletteColor"
+            className="paletteColorImg"
           />
         </h2>
       </header>
       <main>
-        <h2>Hola Main</h2>
+        <FormColor />
       </main>
       <footer>
-        <h5 className="text-center">&copy; Todos los derechos reservados.</h5>
+        <h5 className="text-center p-2">
+          &copy; Todos los derechos reservados.
+        </h5>
       </footer>
     </>
   );
