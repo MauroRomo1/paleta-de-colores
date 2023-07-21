@@ -1,4 +1,4 @@
-const ItemColor = ({ color }) => {
+const ItemColor = ({ color, deletColor }) => {
   let cardStyles = {
     background: color,
   };
@@ -10,7 +10,16 @@ const ItemColor = ({ color }) => {
         <div className="card-body">
           <h5 className="card-title text-center text-uppercase">{color}</h5>
           <div className="d-grid">
-            <button className="btn btn-danger">Borrar</button>
+            <button
+              className="btn btn-danger"
+              title="borrar color"
+              type="button"
+              onClick={() => {
+                deletColor(color);
+              }}
+            >
+              Borrar
+            </button>
           </div>
         </div>
       </div>

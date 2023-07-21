@@ -27,6 +27,14 @@ const FormColor = () => {
     }
   };
 
+  const deletColor = (colorDelet) => {
+    let listColorfilter = listColors.filter(
+      (itemColor) => colorDelet !== itemColor
+    );
+
+    setListColors(listColorfilter);
+  };
+
   return (
     <>
       <section className="container my-4">
@@ -69,7 +77,7 @@ const FormColor = () => {
           </div>
         </form>
       </section>
-      <ListColors listColors={listColors} />
+      <ListColors listColors={listColors} deletColor={deletColor} />
     </>
   );
 };
