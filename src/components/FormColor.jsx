@@ -13,10 +13,6 @@ const FormColor = () => {
     colorSelected.style.backgroundColor = color;
   }, [color]);
 
-  useEffect(() => {
-    console.log(listColors);
-  }, [listColors]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -73,7 +69,7 @@ const FormColor = () => {
           </div>
         </form>
       </section>
-      <ListColors />
+      <ListColors listColors={listColors} />
     </>
   );
 };
