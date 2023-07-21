@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import FormColor from "./components/FormColor";
-import { useState } from "react";
 const App = () => {
   return (
     <>
