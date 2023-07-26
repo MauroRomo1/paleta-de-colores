@@ -6,12 +6,18 @@ import ListColors from "./ListColors";
 const FormColor = () => {
   const [color, setColor] = useState("#563d7c");
 
-  const [listColors, setListColors] = useState([]);
+  let listColorLocalStorage =
+    JSON.parse(localStorage.getItem("listColor")) || [];
+  const [listColors, setListColors] = useState(listColorLocalStorage);
 
   useEffect(() => {
     let colorSelected = document.querySelector("#colorSelected");
     colorSelected.style.backgroundColor = color;
   }, [color]);
+
+  useEffect(() => {
+    localStorage.setItem("listColor", JSON.stringify(listColors));
+  }, [listColors]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
