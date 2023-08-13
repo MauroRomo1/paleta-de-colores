@@ -1,25 +1,27 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import FormColor from "./components/FormColor";
+
 const App = () => {
   return (
     <>
-      <header>
-        <h2 className="text-center">
+      <header className="bg-white">
+        <h4 className="text-center my-2">
           Paleta de colores
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Artist%20Palette.png"
             alt="Artist Palette"
             className="paletteColorImg"
           />
-        </h2>
+        </h4>
       </header>
       <main>
         <FormColor />
       </main>
       <footer>
-        <h5 className="text-center p-2">
+        <h6 className="text-center p-3">
           &copy; Todos los derechos reservados.
-        </h5>
+        </h6>
       </footer>
     </>
   );
