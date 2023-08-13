@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+
 #root {
   background-image: url(./image/backgraound-colors.png);
   background-size: cover;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  font-family: "Changa", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -32,6 +34,14 @@
 .colorCard {
   width: 100%;
   height: 200px;
+}
+
+.btnGuardar {
+  background-color: #4d8fc3;
+}
+
+.btnEliminar {
+  background-color: #f60030;
 }
 
 footer {

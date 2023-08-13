@@ -77,7 +77,7 @@ const FormColor = () => {
             </div>
           </div>
           <div className="d-grid mt-3 d-md-flex justify-content-md-end">
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary btnGuardar" type="submit">
               Guardar
             </button>
           </div>
