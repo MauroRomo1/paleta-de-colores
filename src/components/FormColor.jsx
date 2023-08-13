@@ -46,7 +46,7 @@ const FormColor = () => {
       <section className="container my-4">
         <form
           onSubmit={handleSubmit}
-          className="border border-3 shadow p-3 mb-5"
+          className="border border-3  bg-white shadow p-3 mb-5"
         >
           <div className="row justify-content-center">
             <label htmlFor="colorPicker" className="form-label text-center">
@@ -57,7 +57,7 @@ const FormColor = () => {
               />
               Elige un color
             </label>
-            <div className="border border-2 border-dark p-3 col-11 col-md-2 d-flex justify-content-center align-items-center">
+            <div className="border border-2 border-dark p-3 col-11 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
               <input
                 onChange={(e) => {
                   setColor(e.target.value);
@@ -70,14 +70,14 @@ const FormColor = () => {
               />
             </div>
             <div
-              className="border border-2 border-dark p-3 col-11 col-md-9 colorPreview"
+              className="p-3 col-11 col-md-8 col-lg-9 colorPreview"
               id="colorSelected"
             >
               <h2 className="text-center text-white text-uppercase">{color}</h2>
             </div>
           </div>
           <div className="d-grid mt-3 d-md-flex justify-content-md-end">
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary btnGuardar" type="submit">
               Guardar
             </button>
           </div>

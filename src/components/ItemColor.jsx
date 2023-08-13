@@ -11,7 +11,7 @@ const ItemColor = ({ color, deletColor }) => {
           <h5 className="card-title text-center text-uppercase">{color}</h5>
           <div className="d-grid">
             <button
-              className="btn btn-danger"
+              className="btn btn-danger btnEliminar"
               title="borrar color"
               type="button"
               onClick={() => {
